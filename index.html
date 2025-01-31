@@ -26,7 +26,6 @@
         </nav>
     </header>
 
-    <div class="spacer2"></div>
 
     <main>
 
@@ -44,13 +43,15 @@
             </div>
         </section>
 
+        <div class="spacer2"></div>
+
         <!-- slider -->
         <div class="carousel-container">
             <div class="carousel" onmouseenter="pauseAutoSlide()" onmouseleave="resumeAutoSlide()">
                 <div class="carousel-images">
                     <img src="media/c1.jpg" alt="Image 1">
-                    <img src="media/c1.jpg" alt="Image 1">
-                    <img src="media/c1.jpg" alt="Image 1">
+                    <!-- <img src="media/c1.jpg" alt="Image 1"> -->
+                    <!-- <img src="media/c1.jpg" alt="Image 1"> -->
 
                     <!-- <img src="media/c2.avif" alt="Image 2"> -->
                     <!-- <img src="media/c3.webp" alt="Image 3"> -->
@@ -175,7 +176,7 @@
             console.log(carouselWidth);
             const offset = -currentIndex * carouselWidth; // Calculate the offset based on the dynamic width
             document.querySelector(".carousel-images").style.transform = `translateX(${offset}px)`;
-            carouselInfo.innerText = `${currentIndex+1}/${totalImages}`
+            carouselInfo.innerText = `${currentIndex + 1}/${totalImages}`
         }
 
         function moveSlide(step) {

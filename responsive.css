@@ -11,7 +11,6 @@
   }
 }
 
-
 @media screen and (max-width: 930px) {
   .map {
     width: 95vw;
@@ -19,13 +18,11 @@
   }
 }
 
-
 @media screen and (max-width: 850px) {
   section.third {
     grid-template-columns: auto auto auto;
   }
 }
-
 
 @media screen and (max-width: 815px) {
   nav .logo img {
@@ -36,7 +33,6 @@
   }
 }
 
-
 @media screen and (max-width: 750px) {
   .map-container h2 {
     font-size: 16px;
@@ -45,7 +41,6 @@
     width: 30px;
   }
 }
-
 
 @media screen and (max-width: 650px) {
   nav .logo img {
@@ -66,8 +61,11 @@
   section.third .left img {
     width: 100px;
   }
-}
 
+  .carousel-images img {
+    height: 300px;
+  }
+}
 
 @media screen and (max-width: 530px) {
   nav .logo img {
@@ -130,7 +128,7 @@
     row-gap: 10px;
   }
 
-  section.third h2{
+  section.third h2 {
     justify-self: center;
     align-self: center;
   }
@@ -138,8 +136,12 @@
     width: 25%;
     height: 5px;
   }
-}
 
+  .carousel-images img {
+    height: 250px;
+  }
+
+}
 
 @media screen and (max-width: 430px) {
   nav .logo img {
@@ -154,4 +156,9 @@
   nav .logo {
     gap: 5px;
   }
+
+  .carousel-images img {
+    height: 220px;
+  }
+
 }
