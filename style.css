@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --color1: #003567;
+    --color2: #12c1ba;
+    --color3: #dbedf9;
+    --color4: #315579;
+    --color5: #007BFF;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+}
+
+
+
+.spacer1{ 
+    height: 50px;
+}
+.spacer2{ 
+    height: 20px;
+}
+.font-bold{
+    font-weight: bolder;
+}
+figcaption{
+    /* border: 1px solid; */
+    width: fit-content;
+    margin: auto;
+    font-size: 25px;
+    color: var(--color1);
+    font-weight: bolder;
+}
+.arrow{
+
+}
+.arrow-left{
+    transform: rotate(-90deg);
+}
+.arrow-right{
+    transform: rotate(90deg);
+}
+
+
+nav{
+    background-color: var(--color1);
+    padding: 5px 25px;
+    padding-right: 40px;
+    border-radius: 1000px;
+    width: 95vw;
+    margin: auto;
+    margin-top: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 15px;
+}
+
+nav .logo img{
+    width: 80px;
+    filter: invert(1);
+}
+nav .logo span{
+    font-size: 50px;
+    /* font-weight: bold; */
+    color: aliceblue;
+}
+nav a{
+    color: #dbedf9;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: var(--color4);
+    padding: 5px 20px;
+    border-radius: 100px;
+}
+nav .left ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-grow: 1;
+}
+nav a:hover{
+    background-color: white;
+    color: var(--color1);
+}
+nav a:active{
+    color: var(--color2);
+}
+
+
+
+section.first{
+    /* border: 1px solid; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+section.first .minilogo img{
+    width: 100px;
+}
+section.first .data{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+section.first p:nth-child(1){
+    font-size: 30px;
+}
+section.first p:nth-child(2){
+    font-size: 20px;
+    color: var(--color1);
+}
+
+
+
+
+.carousel-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+#carousel-info{
+    background-color: var(--color1);
+    padding: 3px 10px;
+    border-radius: 100px;
+    color: var(--color2);
+}
+
+/* .carousel {
+    border: 1px solid black;
+    position: relative;
+    max-width: 1300px;
+    width: 90vw;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;
+    box-sizing: content-box;
+} */
+
+.carousel {
+    border: 2px solid var(--color1);
+    position: relative;
+    max-width: 1300px;
+    width: 90vw;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;
+    box-sizing: content-box;
+}
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+.carousel-images img {
+    flex-shrink: 0; /* Prevent images from shrinking */
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-fit: contain;
+    object-fit: fill;
+    /* object-position: 50% 50%; */
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* color: white; */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+
+
+
+
+section.second {
+    /* border: 1px solid red; */
+    background-color: var(--color3);
+    max-width: 1300px;
+    width: 90vw;
+    margin: auto;
+    border-radius: 20px;
+    padding: 30px;
+
+    display: flex;
+    gap: 20px;
+}
+section.second .director-container{
+    /* border: 1px solid red; */
+    width: fit-content;
+}
+section.second .director-container figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+section.second .director-container img{
+    width: 350px;
+    border-radius: 10px;
+    border: 5px solid var(--color2);
+}
+section.second .data{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   font-size: 21px;
+   text-align: justify;
+}
+section.second figcaption{
+    font-size: 25px;
+}
+
+
+
+section.third{
+    /* border: 1px solid; */
+    background-color: var(--color2);
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+    padding: 10px 0px;
+}
+section.third .left {
+    justify-self: center;
+    align-self: center;
+}
+section.third .left img{
+    width: 200px;
+}
+.line{
+    width: 5px;
+    height: 80%;
+    background-color: var(--color1);
+    justify-self: center;
+    align-self: center;
+    border-radius: 100px;
+}
+section.third .right {
+    justify-self: center;
+    align-self: center;
+}
+section.third .right h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+section.third .icons{
+    width: 30px;
+}
+section.third .contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section.third .contact-info >div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;;
+    margin: 0px 10px;
+}
+section.third .contact-info >div a{
+   color: var(--color1);
+   font-weight: bolder;
+}
+
+
+
+
+.map-container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+.map-container h2{
+    color: var(--color1);
+}
+.map{
+    border: 5px solid var(--color2);
+    border-radius: 10px;
+}
+.map-container a{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+
+    background-color: var(--color5);
+    /* border: 1px solid var(--color5); */
+    border-radius: 100px;
+
+    text-decoration: none;
+    font-size: 20px;
+
+    margin: 10px;
+    color: var(--color1);
+    color: white;
+
+    text-align: center;
+}
+.map-arrow-svg{
+    width: 30px;
+}
+.map-container a:hover{
+    background-color: var(--color1);
+    color: white;
+}
+.map-container a:active{
+    color: var(--color2);
+}
+
+
+
+footer{
+    background-color: var(--color1);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
